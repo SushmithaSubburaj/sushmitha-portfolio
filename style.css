@@ -1,0 +1,337 @@
+ 
+  :root{
+    --bg-color:#1f242d;
+    --second-bg-color:#F9F1F0;
+    --text-color:#fff;
+   --main-color:rgb(238, 110, 99) ;
+  }
+  body{
+    margin:0;
+    padding:0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  }
+
+.text1{
+  color:rgb(238, 110, 99);
+}
+  /* navgation bar */
+.navbar {
+   width:100%;
+     padding: 2rem 1.5rem;
+   color:black;
+    margin-right:3rem;
+  }
+  
+ 
+  .navbar-nav .nav-link {
+    color: black;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right:2rem; 
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+     color:rgb(238, 110, 99);
+    
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    color: 	rgb(255, 0, 255);
+  }
+   
+
+
+  /* -------------navgation-bar------- */
+
+
+  /* first page  */
+
+   .banner{
+    width:100%;
+    height:90vh;
+     background-image: linear-gradient(rgba(250,220,217,.85),rgba(250,220,217,.85)),url(img/premium_photo.jfif);
+    background-size:cover; 
+    
+    background-position:center;}
+ 
+  .btn1{
+    background-color:rgb(238, 110, 99); 
+    border:1px solid rgb(238, 110, 99);
+    border-radius:20px;
+    padding:10px 20px;
+   
+  }
+  
+  .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem; 
+    height: 2.5rem; 
+    background: transparent;
+    border: 0.1rem solid var(--main-color); 
+    border-radius: 50%;
+    font-size: 1.5rem; 
+    color: var(--main-color);
+    margin: 1rem 1.5rem 1rem 0; 
+    text-decoration: none; 
+  }
+  
+  .social-media a:hover {
+    background-color: var(--main-color);
+    color: black; 
+  }
+  .social-media-2 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem; 
+    height: 2.5rem; 
+    background: transparent;
+    border: 0.1rem solid var(--main-color); 
+    border-radius: 50%;
+    font-size: 1.5rem; 
+    color: black;
+    margin: 1rem 1.5rem 1rem 0; 
+    text-decoration: none; 
+  }
+  
+  .social-media-2 a:hover {
+    background-color: var(--main-color);
+    color: black; 
+  }
+  
+    
+  
+  
+
+  /* ----------------first page ---------------------- */
+
+
+  /* fifth page (contact page)*/
+
+
+  .contact h2 {
+    margin-bottom: 1rem;  
+  }
+  
+  .contact form {
+    max-width: 40rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 1rem;  
+  }
+  
+  .contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .contact form .input-box input,
+  .contact form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    background-color:#f3e3e1;
+    margin: 0.7rem 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .contact form .input-box input {
+    width: 48%; 
+  }
+  
+  .contact form textarea {
+    resize: none;
+  }
+  
+  
+  @media (max-width: 767px) {
+    .contact form .input-box input {
+      width: 100%; 
+    }
+  }
+  .bg1{
+    background-color: #F9F1F0;
+  }
+  /* -----------fifth page (contact page)--------------*/
+
+
+ /* sixth page  */
+
+   #bg{
+  background-image:linear-gradient(rgba(250,220,217,.75),rgba(250,220,217,.75)),url(img/background-1.jpg);
+ 
+}   
+
+/* third page (latest project) */
+ .portfolio{
+  background:#323946;
+}
+.portfolio h2{
+  margin-bottom:4rem;
+}
+
+.portfolio-container{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  align-items:center;
+  gap:8rem;
+
+}
+
+.portfolio-container .portfolio-box{
+  position:relative;
+  border-radius:2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow:hidden;
+  display:flex;
+}
+
+
+.portfolio-box img{
+  width:100%;
+ transition:.5s ease;
+
+}
+.portfolio-box:hover img{
+
+ transform:scale(1.1)
+
+}
+.portfolio-box .portfolio-layer{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:linear-gradient(rgba(0,0,0,.1),var(--main-color));  
+   
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer{
+  transform: translateY(0);
+}
+
+.portfolio-layer h4{
+    font-size:2rem;
+}
+.portfolio-layer p{
+  font-size:1rem;
+  margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  width:3rem;
+  height:3rem;
+ background:black; 
+  border-radius:50%;
+}
+.portfolio-layer a i{
+  font-size: 2rem;
+  color:var(--second-bg-color); 
+
+}   
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px); 
+  align-items: center;
+  gap: 2rem;
+  justify-content: center; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+@media (max-width: 991px) { 
+  .portfolio-container {
+    grid-template-columns: repeat(2, 300px); 
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio-container {
+    grid-template-columns: 1fr; 
+   
+  }
+}
+
+.portfolio-box {
+  width: 300px; 
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: auto; 
+  transition: .5s ease;
+}
+
+/* ---------------third page (latest project)-------------- */
+
+
+/* fourth page (skill bar) */
+
+.skills-main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.skills-left {
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.skill-bar {
+  margin-bottom: 2rem;
+}
+
+.skill-bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.skill-bar .bar {
+  width: 100%;
+  max-width: 400px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 25px;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-bar .bar .progress {
+  height: 100%;
+  background-color: #f09c9c;
+  border-radius: 25px;
+  width: 0; 
+  transition: width 1s ease;
+}
